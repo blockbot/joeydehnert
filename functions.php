@@ -14,17 +14,17 @@ add_action( 'init', 'register_theme_menus' );
 add_theme_support( 'post-thumbnails' ); 
 
 // register work custom post type
-function videos_register() {
+function projects_register() {
  
 	$labels = array(
-		'name' => _x('Videos', 'post type general name'),
-		'singular_name' => _x('Video', 'post type singular name'),
-		'add_new' => _x('Add New', 'Video'),
-		'add_new_item' => __('Add New Video'),
-		'edit_item' => __('Edit Video'),
-		'new_item' => __('New Video'),
-		'view_item' => __('View Video'),
-		'search_items' => __('Search Videos'),
+		'name' => _x('Projects', 'post type general name'),
+		'singular_name' => _x('Project', 'post type singular name'),
+		'add_new' => _x('Add New', 'Project'),
+		'add_new_item' => __('Add New Project'),
+		'edit_item' => __('Edit Project'),
+		'new_item' => __('New Project'),
+		'view_item' => __('View Project'),
+		'search_items' => __('Search Projects'),
 		'not_found' =>  __('Nothing found'),
 		'not_found_in_trash' => __('Nothing found in Trash'),
 		'parent_item_colon' => ''
@@ -35,7 +35,7 @@ function videos_register() {
 		'public' => true,
 		'publicly_queryable' => true,
 		'show_ui' => true,
-		'query_var' => "video",
+		'query_var' => "projects",
 		'rewrite' => true,
 		'capability_type' => 'post',
 		'has_archive' => true,
@@ -45,9 +45,9 @@ function videos_register() {
 		'taxonomies' => array('category', 'post_tag')
 	  );
  
-	register_post_type( 'video' , $args );
+	register_post_type( 'projects' , $args );
 }
-add_action('init', 'videos_register');
+add_action('init', 'projects_register');
 
 if(!function_exists('diebug')) {
     
@@ -68,12 +68,22 @@ if(!function_exists('diebug')) {
     }
 }
 
+function get_ID_by_slug($page_slug) {
+	
+    $page = get_page_by_path($page_slug);
+    if ($page) {
+        return $page->ID;
+    } else {
+        return null;
+    }
+}
+
 function namespace_add_custom_types($query) {
 
 	if(is_category() || is_tag() && empty( $query->query_vars['suppress_filters'])) {
 	
 		$query->set( 'post_type', array(
-			'post', 'nav_menu_item', 'video'
+			'post', 'nav_menu_item', 'projects'
 		));
 		
 		return $query;

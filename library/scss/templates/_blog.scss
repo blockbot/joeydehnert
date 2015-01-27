@@ -1,0 +1,52 @@
+.page-template-page-blog{
+
+	.singlecol{
+		padding: 120px 0 0;
+		width: 100%;
+
+		#page-title{
+			margin: 0 auto 40px;
+			width: 80%;
+		}
+
+		.post{
+			margin: 0 auto 80px;
+			width: 80%;
+
+			a{
+				color:#000;
+				text-decoration: none;
+
+				&:active, &:hover{
+					text-decoration: underline;
+				}
+
+			}
+
+			.post-thumb{
+				display: block;
+				float: left;
+				margin: 0 2% 0 0; padding-bottom: 25%;
+		 		position: relative;
+		 		overflow: hidden;
+				width: 25%; height: 0;
+
+				img{
+					width: 100%; height: auto;
+				}
+			}
+
+			.post-content{
+				float: left;
+				width: 73%;
+
+				h2{
+					margin-top: 0;
+				}
+			}
+
+		}
+
+	}
+
+}

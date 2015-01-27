@@ -1,6 +1,13 @@
-nav#main{
+header{
+	background:rgba(255,255,255,0.7);
+	position: fixed;
+	top: 0;
+	width: 100%; height: 75px;
+	z-index: 100;
+
+	nav#main{
 		float: right;
-		margin-right: 20px;
+		margin: 25px 20px 0 0;
 		position: relative;
 		width: 30px; height: 30px;
 
@@ -25,7 +32,7 @@ nav#main{
 		}	
 
 		#nav-item-container{
-			background: #00c0ff;
+			background: #fff;
 			padding: 20px;
 			position: absolute;
 			top: 50px; left: 50px;
@@ -39,9 +46,55 @@ nav#main{
 			}
 
 			a{
-				color: #fff !important;
+				color: #000 !important;
+				text-decoration: none;
+
+				&:active, &:hover{
+					text-decoration: underline;
+				}
+				
 			}
 
 		}
 
 	}
+
+	#logo-social{
+		margin-left: 20px;
+		padding: 15px 0 0;
+
+		#logo{
+			float: left;
+		}
+
+		.social{
+			float: left;
+			margin: 9px 0 0 10px;
+
+			a{
+				float: left;
+				display: block;
+				margin-right: 2px;
+				width: 30px; height: 30px;
+			}
+
+			.btn-twitter{
+				background:url("../../img/icons/icon-twitter.png");
+			}
+
+			.btn-instagram{
+				background:url("../../img/icons/icon-instagram.png");
+			}
+
+		}
+
+	}
+
+}
+
+footer{
+	background: #eee;
+	padding: 20px;
+	position: relative;
+	z-index: 2;
+}

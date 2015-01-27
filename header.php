@@ -12,13 +12,11 @@
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
+        <link href='http://fonts.googleapis.com/css?family=Roboto:300,700,400' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="<?php bloginfo("template_url"); ?>/library/css/main.css">
         <script src="<?php bloginfo("template_url"); ?>/library/js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body <?php body_class(); ?>>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
 
         <div id="container">
 
@@ -64,6 +62,17 @@
                     </div>
 
                 </nav>
+
+                <div id="logo-social" class="clearfix">
+
+                    <a href="<?php bloginfo("url"); ?>" id="logo">Joey Dehnert</a>
+                    
+                    <div class="social clearfix">
+                        <a href="https://twitter.com/joeydehnert" class="btn-twitter" target="_blank"></a>
+                        <a href="http://instagram.com/jdpub/" class="btn-instagram" target="_blank"></a>
+                    </div> 
+
+                </div>
             
             </header>
 

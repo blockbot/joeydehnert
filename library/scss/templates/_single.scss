@@ -1,0 +1,41 @@
+.single-featured{
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.post{
+	position: relative;
+	width: 100%;
+	z-index: 2;
+
+	.single-header-contain{
+		color: #fff;
+		text-align: center;
+		padding: 200px 0;
+		text-shadow: 2px 2px 11px #000;
+		
+		.single-header{
+			font-size: 60px;
+			font-weight: 700;
+		}
+
+	}
+
+	.post-content-contain{
+		background: #fff;
+		width: 100%;
+
+		.post-content{
+			margin: 0 auto; padding: 50px 0 1px;
+			width: 60%;
+
+			img{
+				max-width: 100%; height: auto;
+			}
+
+		}
+
+	}
+
+}

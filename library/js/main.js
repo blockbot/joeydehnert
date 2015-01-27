@@ -11,48 +11,57 @@ require.config({
 require(["jquery","interface/global"], function($, global){
 
 	global.init();
-	
+		
+	if($("body").hasClass("home")){
+
+		require(["interface/front"], function(front){
+
+			front.init();
+
+		});
+
+	}
+
 	//
 	// Lazyload and infinite scroll if wanted. Probably need to update for each specific site.
 	//
 
-	
-	// if($(".blog")){
+	if($(".page-template-page-blog")){
 
-	// 	require(["vendor/jquery.infinitescroll.min"], function(infinitescroll){
+		require(["vendor/jquery.infinitescroll.min"], function(infinitescroll){
 			
-	// 		$('.posts').infinitescroll({
+			$('.posts').infinitescroll({
 				
- // 				loading: {
-	// 				finishedMsg: "<p><em>No more posts.</em></p>",
-	// 				img: "/wp-content/themes/jilldehnert/img/loading.gif",
-	// 				msgText: "Loading"
-	// 			},
-	// 		    navSelector: "div.next-posts",            
-	// 		    nextSelector: "div.next-posts a:first",    
-	// 		    itemSelector: ".posts div.post" 
+ 				loading: {
+					finishedMsg: "<p><em>No more posts.</em></p>",
+					img: templateURL + "/img/loading.gif",
+					msgText: "Loading"
+				},
+			    navSelector: "div.next-posts",            
+			    nextSelector: "div.next-posts a:first",    
+			    itemSelector: ".posts div.post" 
 
-	// 		  	}, function(){
+			  	}, function(){
 
-	// 			  	$("img.lazy").lazyload({
-	// 					effect : "fadeIn"
-	// 				});
+				  	$("img.lazy").lazyload({
+						effect : "fadeIn"
+					});
 
-	// 				// fire GA tracking on loading new set of posts
-	// 				_gaq.push(["_trackPageview", window.location.href]);
+					// fire GA tracking on loading new set of posts
+					_gaq.push(["_trackPageview", window.location.href]);
 
-	// 		});
+			});
 			
-	// 	});
+		});
 
-	// }
+	}
 
-	// require(["vendor/jquery.lazyload.min"], function(lazyload){
+	require(["vendor/jquery.lazyload.min"], function(lazyload){
 
-	// 	$(".lazy").lazyload({
-	// 		effect : "fadeIn"
-	// 	});
+		$(".lazy").lazyload({
+			effect : "fadeIn"
+		});
 
-	// });
+	});
 
 });

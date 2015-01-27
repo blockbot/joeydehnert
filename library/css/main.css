@@ -568,38 +568,90 @@ table {
   *zoom: 1;
 }
 
+/* line 1, ../scss/templates/_typography.scss */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* line 5, ../scss/templates/_typography.scss */
+a {
+  color: #32a8de;
+  outline: none !important;
+}
+
+/* line 10, ../scss/templates/_typography.scss */
+h2 {
+  font-weight: 300;
+}
+
+/* line 14, ../scss/templates/_typography.scss */
+#logo {
+  font-size: 40px;
+  font-weight: 300;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+/* line 20, ../scss/templates/_typography.scss */
+#logo:link, #logo:visited {
+  color: #000;
+}
+/* line 24, ../scss/templates/_typography.scss */
+#logo:active, #logo:hover {
+  color: #ccc;
+}
+
+/* line 30, ../scss/templates/_typography.scss */
+.date-time {
+  color: #505050;
+  font-size: 14px;
+}
+
+/* line 35, ../scss/templates/_typography.scss */
+p {
+  line-height: 26px;
+}
+
 /* line 1, ../scss/templates/_global.scss */
-nav#main {
+header {
+  background: rgba(255, 255, 255, 0.7);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 75px;
+  z-index: 100;
+}
+/* line 8, ../scss/templates/_global.scss */
+header nav#main {
   float: right;
-  margin-right: 20px;
+  margin: 25px 20px 0 0;
   position: relative;
   width: 30px;
   height: 30px;
 }
-/* line 7, ../scss/templates/_global.scss */
-nav#main a {
+/* line 14, ../scss/templates/_global.scss */
+header nav#main a {
   display: block;
   outline: none;
   position: relative;
   width: 100%;
   min-height: 27px;
 }
-/* line 13, ../scss/templates/_global.scss */
-nav#main a div {
+/* line 20, ../scss/templates/_global.scss */
+header nav#main a div {
   -webkit-transition: -webkit-transform 200ms cubic-bezier(0, 1, 1, 1);
   -moz-ransition: -moz-transform 200ms cubic-bezier(0, 1, 1, 1);
   transition: transform 200ms cubic-bezier(0, 1, 1, 1);
 }
-/* line 21, ../scss/templates/_global.scss */
-nav#main .nav-bar {
+/* line 28, ../scss/templates/_global.scss */
+header nav#main .nav-bar {
   background: #000;
   margin-bottom: 5px;
   width: 100%;
   height: 5px;
 }
-/* line 27, ../scss/templates/_global.scss */
-nav#main #nav-item-container {
-  background: #00c0ff;
+/* line 34, ../scss/templates/_global.scss */
+header nav#main #nav-item-container {
+  background: #fff;
   padding: 20px;
   position: absolute;
   top: 50px;
@@ -611,12 +663,387 @@ nav#main #nav-item-container {
   transition: transform 200ms cubic-bezier(0, 1, 1, 1);
 }
 @media only screen and (max-width: upper-bound(40.063em, 64em)) {
-  /* line 27, ../scss/templates/_global.scss */
-  nav#main #nav-item-container {
+  /* line 34, ../scss/templates/_global.scss */
+  header nav#main #nav-item-container {
     top: 80px;
   }
 }
-/* line 41, ../scss/templates/_global.scss */
-nav#main #nav-item-container a {
-  color: #fff !important;
+/* line 48, ../scss/templates/_global.scss */
+header nav#main #nav-item-container a {
+  color: #000 !important;
+  text-decoration: none;
+}
+/* line 52, ../scss/templates/_global.scss */
+header nav#main #nav-item-container a:active, header nav#main #nav-item-container a:hover {
+  text-decoration: underline;
+}
+/* line 62, ../scss/templates/_global.scss */
+header #logo-social {
+  margin-left: 20px;
+  padding: 15px 0 0;
+}
+/* line 66, ../scss/templates/_global.scss */
+header #logo-social #logo {
+  float: left;
+}
+/* line 70, ../scss/templates/_global.scss */
+header #logo-social .social {
+  float: left;
+  margin: 9px 0 0 10px;
+}
+/* line 74, ../scss/templates/_global.scss */
+header #logo-social .social a {
+  float: left;
+  display: block;
+  margin-right: 2px;
+  width: 30px;
+  height: 30px;
+}
+/* line 81, ../scss/templates/_global.scss */
+header #logo-social .social .btn-twitter {
+  background: url("../../img/icons/icon-twitter.png");
+}
+/* line 85, ../scss/templates/_global.scss */
+header #logo-social .social .btn-instagram {
+  background: url("../../img/icons/icon-instagram.png");
+}
+
+/* line 95, ../scss/templates/_global.scss */
+footer {
+  background: #eee;
+  padding: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+/* line 5, ../scss/templates/_front.scss */
+.singlecol #front-about #about-header-image-content {
+  width: 100%;
+  height: 674px;
+}
+/* line 8, ../scss/templates/_front.scss */
+.singlecol #front-about #about-header-image-content img {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+/* line 15, ../scss/templates/_front.scss */
+.singlecol #front-about #about-header-image-content #about-header-content {
+  color: #fff;
+  font-size: 40px;
+  margin: 0 auto;
+  padding: 200px 0 0;
+  position: relative;
+  z-index: 2;
+  width: 70%;
+}
+/* line 28, ../scss/templates/_front.scss */
+.singlecol #front-projects {
+  background: #fff;
+  margin: 0;
+  padding: 10%;
+  position: relative;
+  width: 80%;
+  z-index: 2;
+}
+/* line 35, ../scss/templates/_front.scss */
+.singlecol #front-projects .project {
+  float: left;
+  overflow: hidden;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  width: 50%;
+  height: 300px;
+}
+/* line 45, ../scss/templates/_front.scss */
+.singlecol #front-projects .project .project-title {
+  left: 0;
+  padding-top: 46px;
+  position: absolute;
+  text-align: center;
+  -webkit-transition: -webkit-transform 200ms cubic-bezier(0, 1, 1, 1);
+  -moz-ransition: -moz-transform 200ms cubic-bezier(0, 1, 1, 1);
+  transition: transform 200ms cubic-bezier(0, 1, 1, 1);
+  width: 100%;
+}
+/* line 55, ../scss/templates/_front.scss */
+.singlecol #front-projects .project .project-title h3 {
+  color: #fff;
+  font-size: 44px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+/* line 62, ../scss/templates/_front.scss */
+.singlecol #front-projects .project .project-title a {
+  border: 1px solid #fff;
+  color: #fff;
+  font-weight: 300;
+  padding: 7px 10px 5px;
+  text-decoration: none;
+}
+/* line 72, ../scss/templates/_front.scss */
+.singlecol #front-projects .project .project-content {
+  background: rgba(0, 0, 0, 0.4);
+  left: -100%;
+  position: absolute;
+  -webkit-transition: -webkit-transform 200ms cubic-bezier(0, 1, 1, 1);
+  -moz-ransition: -moz-transform 200ms cubic-bezier(0, 1, 1, 1);
+  transition: transform 200ms cubic-bezier(0, 1, 1, 1);
+  width: 100%;
+  height: 300px;
+}
+/* line 81, ../scss/templates/_front.scss */
+.singlecol #front-projects .project .project-content p {
+  color: #fff;
+  margin: 34px auto;
+  width: 85%;
+}
+/* line 87, ../scss/templates/_front.scss */
+.singlecol #front-projects .project .project-content .btn-close {
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 6px 0 0;
+  position: absolute;
+  text-align: center;
+  text-decoration: none;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 24px;
+}
+/* line 100, ../scss/templates/_front.scss */
+.singlecol #front-projects .project img {
+  width: 100%;
+  height: 300px;
+}
+/* line 108, ../scss/templates/_front.scss */
+.singlecol #front-notable-past {
+  background: #000;
+  margin: 0;
+  padding: 10%;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  width: 80%;
+  z-index: 2;
+}
+/* line 119, ../scss/templates/_front.scss */
+.singlecol #front-notable-past h2 {
+  color: #fff;
+}
+/* line 123, ../scss/templates/_front.scss */
+.singlecol #front-notable-past .project {
+  float: left;
+  overflow: hidden;
+  position: relative;
+  width: 50%;
+  height: 210px;
+}
+/* line 129, ../scss/templates/_front.scss */
+.singlecol #front-notable-past .project:nth-child(3) {
+  text-align: right;
+}
+/* line 133, ../scss/templates/_front.scss */
+.singlecol #front-notable-past .project .project-title {
+  left: 0;
+  padding-top: 46px;
+  position: absolute;
+  text-align: center;
+  -webkit-transition: -webkit-transform 200ms cubic-bezier(0, 1, 1, 1);
+  -moz-ransition: -moz-transform 200ms cubic-bezier(0, 1, 1, 1);
+  transition: transform 200ms cubic-bezier(0, 1, 1, 1);
+  width: 100%;
+}
+/* line 143, ../scss/templates/_front.scss */
+.singlecol #front-notable-past .project .project-title h3 {
+  color: #fff;
+  font-size: 44px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+/* line 150, ../scss/templates/_front.scss */
+.singlecol #front-notable-past .project .project-title a {
+  border: 1px solid #fff;
+  color: #fff;
+  font-weight: 300;
+  padding: 10px 10px 5px;
+  text-decoration: none;
+}
+/* line 160, ../scss/templates/_front.scss */
+.singlecol #front-notable-past .project .project-content {
+  background: white;
+  left: -100%;
+  position: absolute;
+  -webkit-transition: -webkit-transform 200ms cubic-bezier(0, 1, 1, 1);
+  -moz-ransition: -moz-transform 200ms cubic-bezier(0, 1, 1, 1);
+  transition: transform 200ms cubic-bezier(0, 1, 1, 1);
+  width: 100%;
+  height: 300px;
+}
+/* line 169, ../scss/templates/_front.scss */
+.singlecol #front-notable-past .project .project-content p {
+  color: #000;
+  margin: 34px auto;
+  text-align: left !important;
+  width: 85%;
+}
+/* line 176, ../scss/templates/_front.scss */
+.singlecol #front-notable-past .project .project-content .btn-close {
+  border: 1px solid #000;
+  color: #000;
+  padding: 6px 0 0;
+  position: absolute;
+  text-align: center;
+  text-decoration: none;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 24px;
+}
+/* line 189, ../scss/templates/_front.scss */
+.singlecol #front-notable-past .project img {
+  width: 90%;
+  height: auto;
+}
+/* line 197, ../scss/templates/_front.scss */
+.singlecol #front-posts {
+  background: #fff;
+  margin: 0;
+  padding: 10%;
+  position: relative;
+  width: 80%;
+  z-index: 2;
+}
+/* line 204, ../scss/templates/_front.scss */
+.singlecol #front-posts .post {
+  float: left;
+  padding: 2%;
+  width: 29%;
+}
+/* line 209, ../scss/templates/_front.scss */
+.singlecol #front-posts .post a {
+  color: #000;
+  text-decoration: none;
+}
+/* line 213, ../scss/templates/_front.scss */
+.singlecol #front-posts .post a:active, .singlecol #front-posts .post a:hover {
+  text-decoration: underline;
+}
+/* line 219, ../scss/templates/_front.scss */
+.singlecol #front-posts .post .post-thumb {
+  overflow: hidden;
+  height: 200px;
+  width: 100%;
+}
+/* line 224, ../scss/templates/_front.scss */
+.singlecol #front-posts .post .post-thumb img {
+  width: 100%;
+}
+/* line 234, ../scss/templates/_front.scss */
+.singlecol #front-contact {
+  background: #fbfbfb;
+  margin: 0;
+  padding: 10% 20%;
+  position: relative;
+  width: 60%;
+  z-index: 2;
+}
+
+/* line 3, ../scss/templates/_blog.scss */
+.page-template-page-blog .singlecol {
+  padding: 120px 0 0;
+  width: 100%;
+}
+/* line 7, ../scss/templates/_blog.scss */
+.page-template-page-blog .singlecol #page-title {
+  margin: 0 auto 40px;
+  width: 80%;
+}
+/* line 12, ../scss/templates/_blog.scss */
+.page-template-page-blog .singlecol .post {
+  margin: 0 auto 80px;
+  width: 80%;
+}
+/* line 16, ../scss/templates/_blog.scss */
+.page-template-page-blog .singlecol .post a {
+  color: #000;
+  text-decoration: none;
+}
+/* line 20, ../scss/templates/_blog.scss */
+.page-template-page-blog .singlecol .post a:active, .page-template-page-blog .singlecol .post a:hover {
+  text-decoration: underline;
+}
+/* line 26, ../scss/templates/_blog.scss */
+.page-template-page-blog .singlecol .post .post-thumb {
+  display: block;
+  float: left;
+  margin: 0 2% 0 0;
+  padding-bottom: 25%;
+  position: relative;
+  overflow: hidden;
+  width: 25%;
+  height: 0;
+}
+/* line 34, ../scss/templates/_blog.scss */
+.page-template-page-blog .singlecol .post .post-thumb img {
+  width: 100%;
+  height: auto;
+}
+/* line 39, ../scss/templates/_blog.scss */
+.page-template-page-blog .singlecol .post .post-content {
+  float: left;
+  width: 73%;
+}
+/* line 43, ../scss/templates/_blog.scss */
+.page-template-page-blog .singlecol .post .post-content h2 {
+  margin-top: 0;
+}
+
+/* line 1, ../scss/templates/_single.scss */
+.single-featured {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* line 7, ../scss/templates/_single.scss */
+.post {
+  position: relative;
+  width: 100%;
+  z-index: 2;
+}
+/* line 12, ../scss/templates/_single.scss */
+.post .single-header-contain {
+  color: #fff;
+  text-align: center;
+  padding: 200px 0;
+  text-shadow: 2px 2px 11px #000;
+}
+/* line 18, ../scss/templates/_single.scss */
+.post .single-header-contain .single-header {
+  font-size: 60px;
+  font-weight: 700;
+}
+/* line 25, ../scss/templates/_single.scss */
+.post .post-content-contain {
+  background: #fff;
+  width: 100%;
+}
+/* line 29, ../scss/templates/_single.scss */
+.post .post-content-contain .post-content {
+  margin: 0 auto;
+  padding: 50px 0 1px;
+  width: 60%;
+}
+/* line 33, ../scss/templates/_single.scss */
+.post .post-content-contain .post-content img {
+  max-width: 100%;
+  height: auto;
 }

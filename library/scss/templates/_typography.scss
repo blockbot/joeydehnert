@@ -1,0 +1,37 @@
+body{
+	font-family: 'Roboto', sans-serif;
+}
+
+a{
+	color: #32a8de;
+	outline: none !important;
+}
+
+h2{
+	font-weight: 300;
+}
+
+#logo{
+	font-size: 40px;
+	font-weight: 300;
+	text-decoration: none;
+	text-transform: uppercase;
+
+	&:link, &:visited{
+		color: #000;
+	}
+
+	&:active, &:hover{
+		color: #ccc;
+	}
+
+}
+
+.date-time{
+	color: #505050;
+	font-size: 14px;
+}
+
+p{
+	line-height: 26px;
+}
