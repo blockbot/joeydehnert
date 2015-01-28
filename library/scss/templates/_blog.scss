@@ -49,4 +49,40 @@
 
 	}
 
+	@media #{$small-only} {
+
+		.singlecol{
+
+			#page-title{
+				width: 85%;
+			}
+
+			.post{
+				width: 85%;
+
+				.post-thumb{
+					padding-bottom: 50%;
+					float: none;
+					width: 100%; 
+
+					img{
+						width: 100%; height: auto;
+					}
+				}
+
+				.post-content{
+					float: none;
+					width: 100%;
+
+					h2{
+						margin-top: 20px;
+					}
+				}
+
+			}
+
+		}
+
+	}
+
 }

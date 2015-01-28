@@ -38,4 +38,29 @@
 
 	}
 
+	@media #{$small-only} {
+
+		.single-header-contain{
+			
+			.single-header{
+				font-size: 35px;
+			}
+
+		}
+
+		.post-content-contain{
+			
+			.post-content{
+				width: 85%;
+
+				img{
+					width: 100%;
+				}
+			
+			}
+
+		}
+		
+	}
+
 }

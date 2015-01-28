@@ -3,7 +3,9 @@
 	#front-about{
 
 		#about-header-image-content{
-			width: 100%; height: 674px;
+			padding-bottom: 25%;
+			position: relative;
+			width: 100%; height: auto;
 
 			img{
 				position: fixed;
@@ -19,6 +21,23 @@
 				position: relative;
 				z-index: 2;
 				width: 70%;
+			}
+
+			@media #{$small-only} {
+				
+				img{
+					position: fixed;
+					top: 0;
+					width: 200%; height: auto;
+					z-index: 1;
+				}
+
+				#about-header-content{
+					font-size: 19px;
+					padding: 168px 0 0;
+					width: 90%;
+				}
+
 			}
 
 		}
@@ -80,7 +99,7 @@
 
 				p{
 					color: #fff;
-					margin: 34px auto;
+					margin: 104px auto 0;
 					width: 85%;
 				}
 
@@ -99,6 +118,24 @@
 
 			img{
 				width: 100%; height: 300px;
+			}
+
+		}
+
+		@media #{$small-only} {
+				
+			.project{
+				float: none;
+				width: 100%;
+			
+				.project-content{
+
+					p{
+						margin: 68px auto 0;
+					}
+
+				}
+
 			}
 
 		}
@@ -168,7 +205,7 @@
 
 				p{
 					color: #000;
-					margin: 34px auto;
+					margin: 70px auto 0;
 					text-align: left !important;
 					width: 85%;
 				}
@@ -188,6 +225,28 @@
 
 			img{
 				width: 90%; height: auto;
+			}
+
+		}
+
+		@media #{$small-only} {
+			
+			.project{
+				float: none;
+				width: 100%;
+
+				&:nth-child(3){
+					text-align: left;
+				}
+
+				.project-content{
+
+					p{
+						margin: 30px auto 0;
+					}
+
+				}
+
 			}
 
 		}
@@ -229,6 +288,16 @@
 
 		}
 
+		@media #{$small-only} {
+				
+			.post{
+				float: none;
+				padding: 0;
+				width: 100%;
+			}
+
+		}
+
 	}
 
 	#front-contact{
@@ -237,6 +306,13 @@
 		position: relative;
 		width: 60%;
 		z-index: 2;
+
+		@media #{$small-only} {
+				
+			padding: 10%;
+			width: 80%;
+
+		}
 
 	}
 

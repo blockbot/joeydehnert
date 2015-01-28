@@ -69,7 +69,7 @@
                     
                     <div class="social clearfix">
                         <a href="https://twitter.com/joeydehnert" class="btn-twitter" target="_blank"></a>
-                        <a href="http://instagram.com/jdpub/" class="btn-instagram" target="_blank"></a>
+                        <a href="http://instagram.com/joeydehnert/" class="btn-instagram" target="_blank"></a>
                     </div> 
 
                 </div>

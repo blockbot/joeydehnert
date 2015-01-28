@@ -662,36 +662,30 @@ header nav#main #nav-item-container {
   -moz-ransition: -moz-transform 200ms cubic-bezier(0, 1, 1, 1);
   transition: transform 200ms cubic-bezier(0, 1, 1, 1);
 }
-@media only screen and (max-width: upper-bound(40.063em, 64em)) {
-  /* line 34, ../scss/templates/_global.scss */
-  header nav#main #nav-item-container {
-    top: 80px;
-  }
-}
-/* line 48, ../scss/templates/_global.scss */
+/* line 44, ../scss/templates/_global.scss */
 header nav#main #nav-item-container a {
   color: #000 !important;
   text-decoration: none;
 }
-/* line 52, ../scss/templates/_global.scss */
+/* line 48, ../scss/templates/_global.scss */
 header nav#main #nav-item-container a:active, header nav#main #nav-item-container a:hover {
   text-decoration: underline;
 }
-/* line 62, ../scss/templates/_global.scss */
+/* line 58, ../scss/templates/_global.scss */
 header #logo-social {
   margin-left: 20px;
   padding: 15px 0 0;
 }
-/* line 66, ../scss/templates/_global.scss */
+/* line 62, ../scss/templates/_global.scss */
 header #logo-social #logo {
   float: left;
 }
-/* line 70, ../scss/templates/_global.scss */
+/* line 66, ../scss/templates/_global.scss */
 header #logo-social .social {
   float: left;
   margin: 9px 0 0 10px;
 }
-/* line 74, ../scss/templates/_global.scss */
+/* line 70, ../scss/templates/_global.scss */
 header #logo-social .social a {
   float: left;
   display: block;
@@ -699,16 +693,23 @@ header #logo-social .social a {
   width: 30px;
   height: 30px;
 }
-/* line 81, ../scss/templates/_global.scss */
+/* line 77, ../scss/templates/_global.scss */
 header #logo-social .social .btn-twitter {
   background: url("../../img/icons/icon-twitter.png");
 }
-/* line 85, ../scss/templates/_global.scss */
+/* line 81, ../scss/templates/_global.scss */
 header #logo-social .social .btn-instagram {
   background: url("../../img/icons/icon-instagram.png");
 }
+@media only screen and (max-width: 32.5rem) {
+  /* line 89, ../scss/templates/_global.scss */
+  header #logo-social #logo {
+    font-size: 26px;
+    padding: 9px 0 0;
+  }
+}
 
-/* line 95, ../scss/templates/_global.scss */
+/* line 100, ../scss/templates/_global.scss */
 footer {
   background: #eee;
   padding: 20px;
@@ -718,10 +719,12 @@ footer {
 
 /* line 5, ../scss/templates/_front.scss */
 .singlecol #front-about #about-header-image-content {
+  padding-bottom: 25%;
+  position: relative;
   width: 100%;
-  height: 674px;
+  height: auto;
 }
-/* line 8, ../scss/templates/_front.scss */
+/* line 10, ../scss/templates/_front.scss */
 .singlecol #front-about #about-header-image-content img {
   position: fixed;
   top: 0;
@@ -729,7 +732,7 @@ footer {
   height: auto;
   z-index: 1;
 }
-/* line 15, ../scss/templates/_front.scss */
+/* line 17, ../scss/templates/_front.scss */
 .singlecol #front-about #about-header-image-content #about-header-content {
   color: #fff;
   font-size: 40px;
@@ -739,7 +742,23 @@ footer {
   z-index: 2;
   width: 70%;
 }
-/* line 28, ../scss/templates/_front.scss */
+@media only screen and (max-width: 32.5rem) {
+  /* line 28, ../scss/templates/_front.scss */
+  .singlecol #front-about #about-header-image-content img {
+    position: fixed;
+    top: 0;
+    width: 200%;
+    height: auto;
+    z-index: 1;
+  }
+  /* line 35, ../scss/templates/_front.scss */
+  .singlecol #front-about #about-header-image-content #about-header-content {
+    font-size: 19px;
+    padding: 168px 0 0;
+    width: 90%;
+  }
+}
+/* line 47, ../scss/templates/_front.scss */
 .singlecol #front-projects {
   background: #fff;
   margin: 0;
@@ -748,7 +767,7 @@ footer {
   width: 80%;
   z-index: 2;
 }
-/* line 35, ../scss/templates/_front.scss */
+/* line 54, ../scss/templates/_front.scss */
 .singlecol #front-projects .project {
   float: left;
   overflow: hidden;
@@ -760,7 +779,7 @@ footer {
   width: 50%;
   height: 300px;
 }
-/* line 45, ../scss/templates/_front.scss */
+/* line 64, ../scss/templates/_front.scss */
 .singlecol #front-projects .project .project-title {
   left: 0;
   padding-top: 46px;
@@ -771,14 +790,14 @@ footer {
   transition: transform 200ms cubic-bezier(0, 1, 1, 1);
   width: 100%;
 }
-/* line 55, ../scss/templates/_front.scss */
+/* line 74, ../scss/templates/_front.scss */
 .singlecol #front-projects .project .project-title h3 {
   color: #fff;
   font-size: 44px;
   font-weight: 300;
   text-transform: uppercase;
 }
-/* line 62, ../scss/templates/_front.scss */
+/* line 81, ../scss/templates/_front.scss */
 .singlecol #front-projects .project .project-title a {
   border: 1px solid #fff;
   color: #fff;
@@ -786,7 +805,7 @@ footer {
   padding: 7px 10px 5px;
   text-decoration: none;
 }
-/* line 72, ../scss/templates/_front.scss */
+/* line 91, ../scss/templates/_front.scss */
 .singlecol #front-projects .project .project-content {
   background: rgba(0, 0, 0, 0.4);
   left: -100%;
@@ -797,13 +816,13 @@ footer {
   width: 100%;
   height: 300px;
 }
-/* line 81, ../scss/templates/_front.scss */
+/* line 100, ../scss/templates/_front.scss */
 .singlecol #front-projects .project .project-content p {
   color: #fff;
-  margin: 34px auto;
+  margin: 104px auto 0;
   width: 85%;
 }
-/* line 87, ../scss/templates/_front.scss */
+/* line 106, ../scss/templates/_front.scss */
 .singlecol #front-projects .project .project-content .btn-close {
   border: 1px solid #fff;
   color: #fff;
@@ -816,12 +835,23 @@ footer {
   width: 30px;
   height: 24px;
 }
-/* line 100, ../scss/templates/_front.scss */
+/* line 119, ../scss/templates/_front.scss */
 .singlecol #front-projects .project img {
   width: 100%;
   height: 300px;
 }
-/* line 108, ../scss/templates/_front.scss */
+@media only screen and (max-width: 32.5rem) {
+  /* line 127, ../scss/templates/_front.scss */
+  .singlecol #front-projects .project {
+    float: none;
+    width: 100%;
+  }
+  /* line 133, ../scss/templates/_front.scss */
+  .singlecol #front-projects .project .project-content p {
+    margin: 68px auto 0;
+  }
+}
+/* line 145, ../scss/templates/_front.scss */
 .singlecol #front-notable-past {
   background: #000;
   margin: 0;
@@ -834,11 +864,11 @@ footer {
   width: 80%;
   z-index: 2;
 }
-/* line 119, ../scss/templates/_front.scss */
+/* line 156, ../scss/templates/_front.scss */
 .singlecol #front-notable-past h2 {
   color: #fff;
 }
-/* line 123, ../scss/templates/_front.scss */
+/* line 160, ../scss/templates/_front.scss */
 .singlecol #front-notable-past .project {
   float: left;
   overflow: hidden;
@@ -846,11 +876,11 @@ footer {
   width: 50%;
   height: 210px;
 }
-/* line 129, ../scss/templates/_front.scss */
+/* line 166, ../scss/templates/_front.scss */
 .singlecol #front-notable-past .project:nth-child(3) {
   text-align: right;
 }
-/* line 133, ../scss/templates/_front.scss */
+/* line 170, ../scss/templates/_front.scss */
 .singlecol #front-notable-past .project .project-title {
   left: 0;
   padding-top: 46px;
@@ -861,14 +891,14 @@ footer {
   transition: transform 200ms cubic-bezier(0, 1, 1, 1);
   width: 100%;
 }
-/* line 143, ../scss/templates/_front.scss */
+/* line 180, ../scss/templates/_front.scss */
 .singlecol #front-notable-past .project .project-title h3 {
   color: #fff;
   font-size: 44px;
   font-weight: 300;
   text-transform: uppercase;
 }
-/* line 150, ../scss/templates/_front.scss */
+/* line 187, ../scss/templates/_front.scss */
 .singlecol #front-notable-past .project .project-title a {
   border: 1px solid #fff;
   color: #fff;
@@ -876,7 +906,7 @@ footer {
   padding: 10px 10px 5px;
   text-decoration: none;
 }
-/* line 160, ../scss/templates/_front.scss */
+/* line 197, ../scss/templates/_front.scss */
 .singlecol #front-notable-past .project .project-content {
   background: white;
   left: -100%;
@@ -887,14 +917,14 @@ footer {
   width: 100%;
   height: 300px;
 }
-/* line 169, ../scss/templates/_front.scss */
+/* line 206, ../scss/templates/_front.scss */
 .singlecol #front-notable-past .project .project-content p {
   color: #000;
-  margin: 34px auto;
+  margin: 70px auto 0;
   text-align: left !important;
   width: 85%;
 }
-/* line 176, ../scss/templates/_front.scss */
+/* line 213, ../scss/templates/_front.scss */
 .singlecol #front-notable-past .project .project-content .btn-close {
   border: 1px solid #000;
   color: #000;
@@ -907,12 +937,27 @@ footer {
   width: 30px;
   height: 24px;
 }
-/* line 189, ../scss/templates/_front.scss */
+/* line 226, ../scss/templates/_front.scss */
 .singlecol #front-notable-past .project img {
   width: 90%;
   height: auto;
 }
-/* line 197, ../scss/templates/_front.scss */
+@media only screen and (max-width: 32.5rem) {
+  /* line 234, ../scss/templates/_front.scss */
+  .singlecol #front-notable-past .project {
+    float: none;
+    width: 100%;
+  }
+  /* line 238, ../scss/templates/_front.scss */
+  .singlecol #front-notable-past .project:nth-child(3) {
+    text-align: left;
+  }
+  /* line 244, ../scss/templates/_front.scss */
+  .singlecol #front-notable-past .project .project-content p {
+    margin: 30px auto 0;
+  }
+}
+/* line 256, ../scss/templates/_front.scss */
 .singlecol #front-posts {
   background: #fff;
   margin: 0;
@@ -921,32 +966,40 @@ footer {
   width: 80%;
   z-index: 2;
 }
-/* line 204, ../scss/templates/_front.scss */
+/* line 263, ../scss/templates/_front.scss */
 .singlecol #front-posts .post {
   float: left;
   padding: 2%;
   width: 29%;
 }
-/* line 209, ../scss/templates/_front.scss */
+/* line 268, ../scss/templates/_front.scss */
 .singlecol #front-posts .post a {
   color: #000;
   text-decoration: none;
 }
-/* line 213, ../scss/templates/_front.scss */
+/* line 272, ../scss/templates/_front.scss */
 .singlecol #front-posts .post a:active, .singlecol #front-posts .post a:hover {
   text-decoration: underline;
 }
-/* line 219, ../scss/templates/_front.scss */
+/* line 278, ../scss/templates/_front.scss */
 .singlecol #front-posts .post .post-thumb {
   overflow: hidden;
   height: 200px;
   width: 100%;
 }
-/* line 224, ../scss/templates/_front.scss */
+/* line 283, ../scss/templates/_front.scss */
 .singlecol #front-posts .post .post-thumb img {
   width: 100%;
 }
-/* line 234, ../scss/templates/_front.scss */
+@media only screen and (max-width: 32.5rem) {
+  /* line 293, ../scss/templates/_front.scss */
+  .singlecol #front-posts .post {
+    float: none;
+    padding: 0;
+    width: 100%;
+  }
+}
+/* line 303, ../scss/templates/_front.scss */
 .singlecol #front-contact {
   background: #fbfbfb;
   margin: 0;
@@ -954,6 +1007,13 @@ footer {
   position: relative;
   width: 60%;
   z-index: 2;
+}
+@media only screen and (max-width: 32.5rem) {
+  /* line 303, ../scss/templates/_front.scss */
+  .singlecol #front-contact {
+    padding: 10%;
+    width: 80%;
+  }
 }
 
 /* line 3, ../scss/templates/_blog.scss */
@@ -1005,6 +1065,36 @@ footer {
 .page-template-page-blog .singlecol .post .post-content h2 {
   margin-top: 0;
 }
+@media only screen and (max-width: 32.5rem) {
+  /* line 56, ../scss/templates/_blog.scss */
+  .page-template-page-blog .singlecol #page-title {
+    width: 85%;
+  }
+  /* line 60, ../scss/templates/_blog.scss */
+  .page-template-page-blog .singlecol .post {
+    width: 85%;
+  }
+  /* line 63, ../scss/templates/_blog.scss */
+  .page-template-page-blog .singlecol .post .post-thumb {
+    padding-bottom: 50%;
+    float: none;
+    width: 100%;
+  }
+  /* line 68, ../scss/templates/_blog.scss */
+  .page-template-page-blog .singlecol .post .post-thumb img {
+    width: 100%;
+    height: auto;
+  }
+  /* line 73, ../scss/templates/_blog.scss */
+  .page-template-page-blog .singlecol .post .post-content {
+    float: none;
+    width: 100%;
+  }
+  /* line 77, ../scss/templates/_blog.scss */
+  .page-template-page-blog .singlecol .post .post-content h2 {
+    margin-top: 20px;
+  }
+}
 
 /* line 1, ../scss/templates/_single.scss */
 .single-featured {
@@ -1046,4 +1136,18 @@ footer {
 .post .post-content-contain .post-content img {
   max-width: 100%;
   height: auto;
+}
+@media only screen and (max-width: 32.5rem) {
+  /* line 45, ../scss/templates/_single.scss */
+  .post .single-header-contain .single-header {
+    font-size: 35px;
+  }
+  /* line 53, ../scss/templates/_single.scss */
+  .post .post-content-contain .post-content {
+    width: 85%;
+  }
+  /* line 56, ../scss/templates/_single.scss */
+  .post .post-content-contain .post-content img {
+    width: 100%;
+  }
 }
