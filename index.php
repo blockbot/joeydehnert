@@ -44,7 +44,7 @@
   		$args = array( 
 			'post_type' => 'projects',
 			'posts_per_page' => 10,
-			'order' => 'DESC',
+			'order' => 'ASC',
 			'paged' => $paged,
 			'category__not_in' => array($past_cat_id->cat_ID)
 		);
@@ -106,7 +106,7 @@
   		$args = array( 
 			'post_type' => 'projects',
 			'posts_per_page' => 10,
-			'order' => 'DESC',
+			'order' => 'ASC',
 			'paged' => $paged,
 			'category__in' => array($past_cat_id->cat_ID)
 		);
