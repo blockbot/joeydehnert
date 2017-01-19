@@ -611,549 +611,67 @@ p {
   line-height: 26px;
 }
 
-/* line 1, ../scss/templates/_global.scss */
-header {
-  background: rgba(255, 255, 255, 0.7);
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 75px;
-  z-index: 100;
-}
-/* line 8, ../scss/templates/_global.scss */
-header nav#main {
-  float: right;
-  margin: 25px 20px 0 0;
-  position: relative;
-  width: 30px;
-  height: 30px;
-}
-/* line 14, ../scss/templates/_global.scss */
-header nav#main a {
-  display: block;
-  outline: none;
-  position: relative;
-  width: 100%;
-  min-height: 27px;
-}
-/* line 20, ../scss/templates/_global.scss */
-header nav#main a div {
-  -webkit-transition: -webkit-transform 200ms cubic-bezier(0, 1, 1, 1);
-  -moz-ransition: -moz-transform 200ms cubic-bezier(0, 1, 1, 1);
-  transition: transform 200ms cubic-bezier(0, 1, 1, 1);
-}
-/* line 28, ../scss/templates/_global.scss */
-header nav#main .nav-bar {
-  background: #000;
-  margin-bottom: 5px;
-  width: 100%;
-  height: 5px;
-}
-/* line 34, ../scss/templates/_global.scss */
-header nav#main #nav-item-container {
-  background: #fff;
-  padding: 20px;
-  position: absolute;
-  top: 50px;
-  left: 50px;
-  width: 200px;
-  height: auto;
-  -webkit-transition: -webkit-transform 200ms cubic-bezier(0, 1, 1, 1);
-  -moz-ransition: -moz-transform 200ms cubic-bezier(0, 1, 1, 1);
-  transition: transform 200ms cubic-bezier(0, 1, 1, 1);
-}
-/* line 44, ../scss/templates/_global.scss */
-header nav#main #nav-item-container a {
-  color: #000 !important;
-  text-decoration: none;
-}
-/* line 48, ../scss/templates/_global.scss */
-header nav#main #nav-item-container a:active, header nav#main #nav-item-container a:hover {
-  text-decoration: underline;
-}
-/* line 58, ../scss/templates/_global.scss */
-header #logo-social {
-  margin-left: 20px;
-  padding: 15px 0 0;
-}
-/* line 62, ../scss/templates/_global.scss */
-header #logo-social #logo {
-  float: left;
-}
-/* line 66, ../scss/templates/_global.scss */
-header #logo-social .social {
-  float: left;
-  margin: 9px 0 0 10px;
-}
-/* line 70, ../scss/templates/_global.scss */
-header #logo-social .social a {
-  float: left;
-  display: block;
-  margin-right: 2px;
-  width: 30px;
-  height: 30px;
-}
-/* line 77, ../scss/templates/_global.scss */
-header #logo-social .social .btn-twitter {
-  background: url("../../img/icons/icon-twitter.png");
-}
-/* line 81, ../scss/templates/_global.scss */
-header #logo-social .social .btn-instagram {
-  background: url("../../img/icons/icon-instagram.png");
-}
-@media only screen and (max-width: 32.5rem) {
-  /* line 89, ../scss/templates/_global.scss */
-  header #logo-social #logo {
-    font-size: 26px;
-    padding: 9px 0 0;
-  }
+/* line 1, ../scss/templates/_front.scss */
+html {
+  background: url("http://i.imgur.com/x1f2YLd.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
-/* line 100, ../scss/templates/_global.scss */
-footer {
-  background: #eee;
-  padding: 20px;
-  position: relative;
-  z-index: 2;
-}
-
-/* line 5, ../scss/templates/_front.scss */
-.singlecol #front-about #about-header-image-content {
-  padding-bottom: 25%;
-  position: relative;
-  width: 100%;
-  height: auto;
-}
 /* line 10, ../scss/templates/_front.scss */
-.singlecol #front-about #about-header-image-content img {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: auto;
-  z-index: 1;
-}
-/* line 17, ../scss/templates/_front.scss */
-.singlecol #front-about #about-header-image-content #about-header-content {
+#front-heading h1 {
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
   color: #fff;
-  font-size: 40px;
-  margin: 0 auto;
-  padding: 200px 0 0;
-  position: relative;
-  z-index: 2;
-  width: 70%;
-}
-@media only screen and (max-width: 32.5rem) {
-  /* line 28, ../scss/templates/_front.scss */
-  .singlecol #front-about #about-header-image-content img {
-    position: fixed;
-    top: 0;
-    width: 200%;
-    height: auto;
-    z-index: 1;
-  }
-  /* line 35, ../scss/templates/_front.scss */
-  .singlecol #front-about #about-header-image-content #about-header-content {
-    font-size: 19px;
-    padding: 168px 0 0;
-    width: 90%;
-  }
-}
-/* line 47, ../scss/templates/_front.scss */
-.singlecol #front-projects {
-  background: #fff;
-  margin: 0;
-  padding: 10%;
-  position: relative;
-  width: 80%;
-  z-index: 2;
-}
-/* line 54, ../scss/templates/_front.scss */
-.singlecol #front-projects .project {
-  float: left;
-  overflow: hidden;
-  position: relative;
-  user-select: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  width: 50%;
-  height: 300px;
-}
-/* line 64, ../scss/templates/_front.scss */
-.singlecol #front-projects .project .project-title {
-  left: 0;
-  padding-top: 46px;
-  position: absolute;
-  text-align: center;
-  -webkit-transition: -webkit-transform 200ms cubic-bezier(0, 1, 1, 1);
-  -moz-ransition: -moz-transform 200ms cubic-bezier(0, 1, 1, 1);
-  transition: transform 200ms cubic-bezier(0, 1, 1, 1);
-  width: 100%;
-}
-/* line 74, ../scss/templates/_front.scss */
-.singlecol #front-projects .project .project-title h3 {
-  color: #fff;
-  font-size: 44px;
-  font-weight: 300;
-  text-transform: uppercase;
-}
-/* line 81, ../scss/templates/_front.scss */
-.singlecol #front-projects .project .project-title a {
-  border: 1px solid #fff;
-  color: #fff;
-  font-weight: 300;
-  padding: 7px 10px 5px;
-  text-decoration: none;
-}
-/* line 91, ../scss/templates/_front.scss */
-.singlecol #front-projects .project .project-content {
-  background: rgba(0, 0, 0, 0.4);
-  left: -100%;
-  position: absolute;
-  -webkit-transition: -webkit-transform 200ms cubic-bezier(0, 1, 1, 1);
-  -moz-ransition: -moz-transform 200ms cubic-bezier(0, 1, 1, 1);
-  transition: transform 200ms cubic-bezier(0, 1, 1, 1);
-  width: 100%;
-  height: 300px;
-}
-/* line 100, ../scss/templates/_front.scss */
-.singlecol #front-projects .project .project-content p {
-  color: #fff;
-  margin: 104px auto 0;
-  width: 85%;
-}
-/* line 106, ../scss/templates/_front.scss */
-.singlecol #front-projects .project .project-content .btn-close {
-  border: 1px solid #fff;
-  color: #fff;
-  padding: 6px 0 0;
-  position: absolute;
-  text-align: center;
-  text-decoration: none;
-  top: 10px;
-  right: 10px;
-  width: 30px;
-  height: 24px;
-}
-/* line 119, ../scss/templates/_front.scss */
-.singlecol #front-projects .project img {
-  width: 100%;
-  height: 300px;
-}
-@media only screen and (max-width: 32.5rem) {
-  /* line 127, ../scss/templates/_front.scss */
-  .singlecol #front-projects .project {
-    float: none;
-    width: 100%;
-  }
-  /* line 133, ../scss/templates/_front.scss */
-  .singlecol #front-projects .project .project-content p {
-    margin: 68px auto 0;
-  }
-  /* line 139, ../scss/templates/_front.scss */
-  .singlecol #front-projects .project img {
-    width: 240%;
-    height: auto;
-    margin-left: -50%;
-  }
-}
-/* line 151, ../scss/templates/_front.scss */
-.singlecol #front-notable-past {
-  background: #000;
-  margin: 0;
-  padding: 10%;
-  position: relative;
-  user-select: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  width: 80%;
-  z-index: 2;
-}
-/* line 162, ../scss/templates/_front.scss */
-.singlecol #front-notable-past h2 {
-  color: #fff;
-}
-/* line 166, ../scss/templates/_front.scss */
-.singlecol #front-notable-past .project {
-  float: left;
-  overflow: hidden;
-  position: relative;
-  width: 50%;
-  height: 210px;
-}
-/* line 172, ../scss/templates/_front.scss */
-.singlecol #front-notable-past .project:nth-child(3) {
-  text-align: right;
-}
-/* line 176, ../scss/templates/_front.scss */
-.singlecol #front-notable-past .project .project-title {
-  left: 0;
-  padding-top: 46px;
-  position: absolute;
-  text-align: center;
-  -webkit-transition: -webkit-transform 200ms cubic-bezier(0, 1, 1, 1);
-  -moz-ransition: -moz-transform 200ms cubic-bezier(0, 1, 1, 1);
-  transition: transform 200ms cubic-bezier(0, 1, 1, 1);
-  width: 100%;
-}
-/* line 186, ../scss/templates/_front.scss */
-.singlecol #front-notable-past .project .project-title h3 {
-  color: #fff;
-  font-size: 44px;
-  font-weight: 300;
-  text-transform: uppercase;
-}
-/* line 193, ../scss/templates/_front.scss */
-.singlecol #front-notable-past .project .project-title a {
-  border: 1px solid #fff;
-  color: #fff;
-  font-weight: 300;
-  padding: 10px 10px 5px;
-  text-decoration: none;
-}
-/* line 203, ../scss/templates/_front.scss */
-.singlecol #front-notable-past .project .project-content {
-  background: white;
-  left: -100%;
-  position: absolute;
-  -webkit-transition: -webkit-transform 200ms cubic-bezier(0, 1, 1, 1);
-  -moz-ransition: -moz-transform 200ms cubic-bezier(0, 1, 1, 1);
-  transition: transform 200ms cubic-bezier(0, 1, 1, 1);
-  width: 100%;
-  height: 300px;
-}
-/* line 212, ../scss/templates/_front.scss */
-.singlecol #front-notable-past .project .project-content p {
-  color: #000;
-  margin: 70px auto 0;
-  text-align: left !important;
-  width: 85%;
-}
-/* line 219, ../scss/templates/_front.scss */
-.singlecol #front-notable-past .project .project-content .btn-close {
-  border: 1px solid #000;
-  color: #000;
-  padding: 6px 0 0;
-  position: absolute;
-  text-align: center;
-  text-decoration: none;
-  top: 10px;
-  right: 10px;
-  width: 30px;
-  height: 24px;
-}
-/* line 232, ../scss/templates/_front.scss */
-.singlecol #front-notable-past .project img {
-  width: 90%;
-  height: auto;
-}
-@media only screen and (max-width: 32.5rem) {
-  /* line 240, ../scss/templates/_front.scss */
-  .singlecol #front-notable-past .project {
-    float: none;
-    width: 100%;
-  }
-  /* line 244, ../scss/templates/_front.scss */
-  .singlecol #front-notable-past .project:nth-child(3) {
-    text-align: left;
-  }
-  /* line 250, ../scss/templates/_front.scss */
-  .singlecol #front-notable-past .project .project-content p {
-    margin: 30px auto 0;
-  }
-}
-/* line 262, ../scss/templates/_front.scss */
-.singlecol #front-posts {
-  background: #fff;
-  margin: 0;
-  padding: 10%;
-  position: relative;
-  width: 80%;
-  z-index: 2;
-}
-/* line 269, ../scss/templates/_front.scss */
-.singlecol #front-posts .post {
-  float: left;
-  padding: 2%;
-  width: 29%;
-}
-/* line 274, ../scss/templates/_front.scss */
-.singlecol #front-posts .post a {
-  color: #000;
-  text-decoration: none;
-}
-/* line 278, ../scss/templates/_front.scss */
-.singlecol #front-posts .post a:active, .singlecol #front-posts .post a:hover {
-  text-decoration: underline;
-}
-/* line 284, ../scss/templates/_front.scss */
-.singlecol #front-posts .post .post-thumb {
-  overflow: hidden;
-  height: 200px;
-  width: 100%;
-}
-/* line 289, ../scss/templates/_front.scss */
-.singlecol #front-posts .post .post-thumb img {
-  width: 100%;
-}
-@media only screen and (max-width: 32.5rem) {
-  /* line 299, ../scss/templates/_front.scss */
-  .singlecol #front-posts .post {
-    float: none;
-    padding: 0;
-    width: 100%;
-  }
-}
-/* line 309, ../scss/templates/_front.scss */
-.singlecol #front-contact {
-  background: #fbfbfb;
-  margin: 0;
-  padding: 10% 20%;
-  position: relative;
-  width: 60%;
-  z-index: 2;
-}
-@media only screen and (max-width: 32.5rem) {
-  /* line 309, ../scss/templates/_front.scss */
-  .singlecol #front-contact {
-    padding: 10%;
-    width: 80%;
-  }
-}
-
-/* line 3, ../scss/templates/_blog.scss */
-.page-template-page-blog .singlecol {
-  padding: 120px 0 0;
-  width: 100%;
-}
-/* line 7, ../scss/templates/_blog.scss */
-.page-template-page-blog .singlecol #page-title {
-  margin: 0 auto 40px;
-  width: 80%;
-}
-/* line 12, ../scss/templates/_blog.scss */
-.page-template-page-blog .singlecol .post {
-  margin: 0 auto 80px;
-  width: 80%;
-}
-/* line 16, ../scss/templates/_blog.scss */
-.page-template-page-blog .singlecol .post a {
-  color: #000;
-  text-decoration: none;
-}
-/* line 20, ../scss/templates/_blog.scss */
-.page-template-page-blog .singlecol .post a:active, .page-template-page-blog .singlecol .post a:hover {
-  text-decoration: underline;
-}
-/* line 26, ../scss/templates/_blog.scss */
-.page-template-page-blog .singlecol .post .post-thumb {
   display: block;
-  float: left;
-  margin: 0 2% 0 0;
-  padding-bottom: 25%;
-  position: relative;
-  overflow: hidden;
-  width: 25%;
-  height: 0;
-}
-/* line 34, ../scss/templates/_blog.scss */
-.page-template-page-blog .singlecol .post .post-thumb img {
-  width: 100%;
-  height: auto;
-}
-/* line 39, ../scss/templates/_blog.scss */
-.page-template-page-blog .singlecol .post .post-content {
-  float: left;
-  width: 73%;
-}
-/* line 43, ../scss/templates/_blog.scss */
-.page-template-page-blog .singlecol .post .post-content h2 {
-  margin-top: 0;
-}
-@media only screen and (max-width: 32.5rem) {
-  /* line 56, ../scss/templates/_blog.scss */
-  .page-template-page-blog .singlecol #page-title {
-    width: 85%;
-  }
-  /* line 60, ../scss/templates/_blog.scss */
-  .page-template-page-blog .singlecol .post {
-    width: 85%;
-  }
-  /* line 63, ../scss/templates/_blog.scss */
-  .page-template-page-blog .singlecol .post .post-thumb {
-    padding-bottom: 50%;
-    float: none;
-    width: 100%;
-  }
-  /* line 68, ../scss/templates/_blog.scss */
-  .page-template-page-blog .singlecol .post .post-thumb img {
-    width: 100%;
-    height: auto;
-  }
-  /* line 73, ../scss/templates/_blog.scss */
-  .page-template-page-blog .singlecol .post .post-content {
-    float: none;
-    width: 100%;
-  }
-  /* line 77, ../scss/templates/_blog.scss */
-  .page-template-page-blog .singlecol .post .post-content h2 {
-    margin-top: 20px;
-  }
-}
-
-/* line 1, ../scss/templates/_single.scss */
-.single-featured {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-/* line 7, ../scss/templates/_single.scss */
-.post {
-  position: relative;
-  width: 100%;
-  z-index: 2;
-}
-/* line 12, ../scss/templates/_single.scss */
-.post .single-header-contain {
-  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 23px;
+  margin: 82px auto 0;
+  padding: 10px;
   text-align: center;
-  padding: 200px 0;
-  text-shadow: 2px 2px 11px #000;
+  width: 278px;
 }
-/* line 18, ../scss/templates/_single.scss */
-.post .single-header-contain .single-header {
-  font-size: 60px;
-  font-weight: 700;
+@media only screen and (min-width: 48.0625rem) {
+  /* line 10, ../scss/templates/_front.scss */
+  #front-heading h1 {
+    font-size: 2em;
+    margin: 300px auto 0;
+    width: 389px;
+  }
 }
-/* line 25, ../scss/templates/_single.scss */
-.post .post-content-contain {
-  background: #fff;
-  width: 100%;
+
+/* line 30, ../scss/templates/_front.scss */
+#corndog-callout {
+  background: white;
+  border-radius: 125px;
+  bottom: 50px;
+  color: #000;
+  display: block;
+  height: 220px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+  position: absolute;
+  text-decoration: none;
+  width: 250px;
 }
-/* line 29, ../scss/templates/_single.scss */
-.post .post-content-contain .post-content {
+/* line 45, ../scss/templates/_front.scss */
+#corndog-callout:hover, #corndog-callout:active {
+  text-decoration: underline;
+}
+/* line 48, ../scss/templates/_front.scss */
+#corndog-callout img {
+  display: block;
   margin: 0 auto;
-  padding: 50px 0 1px;
-  width: 60%;
 }
-/* line 33, ../scss/templates/_single.scss */
-.post .post-content-contain .post-content img {
-  max-width: 100%;
-  height: auto;
-}
-@media only screen and (max-width: 32.5rem) {
-  /* line 45, ../scss/templates/_single.scss */
-  .post .single-header-contain .single-header {
-    font-size: 35px;
-  }
-  /* line 53, ../scss/templates/_single.scss */
-  .post .post-content-contain .post-content {
-    width: 85%;
-  }
-  /* line 56, ../scss/templates/_single.scss */
-  .post .post-content-contain .post-content img {
-    width: 100%;
-  }
+/* line 52, ../scss/templates/_front.scss */
+#corndog-callout p {
+  font-family: 'VT323', monospace;
+  font-size: 22px;
+  text-align: center;
 }

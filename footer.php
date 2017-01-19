@@ -1,16 +1,6 @@
-            </div> <!-- end #content -->
-        
-            <footer data-template-url="<?php bloginfo("template_url"); ?>">
-
-                <p>Copyright &copy; 2006 - <?php echo date(Y); ?> Joey Dehnert</p>
-
-            </footer> 
-
-        </div> <!-- end #container -->  
-
         <?php
 
-            // to make use of this update your .htaccess on your local machine 
+            // to make use of this update your .htaccess on your local machine
             // in your wordpress root directory to include:
             // SetEnv APPLICATION_ENV development
 
@@ -21,7 +11,7 @@
             }
 
         ?>
-        
+
         <script data-main="<?php bloginfo("template_url"); ?>/library/<?php echo $js_directory; ?>/main" src="<?php bloginfo("template_url"); ?>/library/js/require.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
@@ -38,6 +28,6 @@
           })();
 
         </script>
-        
+
     </body>
 </html>
